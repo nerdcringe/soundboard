@@ -37,9 +37,10 @@ button {
     width: 100%;
     height: 100%;
     font-family: solano-gothic-pro-mvb, sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     user-select: none;
    -webkit-tap-highlight-color:rgba(255,255,255,0.5);
+    word-wrap: break-word;
 }
   button:focus{
     background:white;
@@ -58,8 +59,7 @@ button {
     
   <div class="grid-item">
     <audio id="sound1" src="sounds/f-you.wav" preload="auto"></audio>
-    <button onclick="document.getElementById('sound1').play();" type="button">F***
-    You</button></div>
+    <button onclick="document.getElementById('sound1').play();" type="button">F*** You</button></div>
     
   <div class="grid-item">
     <audio id="sound2" src="sounds/youcantstop.wav" preload="auto"></audio>
@@ -70,7 +70,8 @@ button {
     <button onclick="document.getElementById('sound3').play();" type="button">🚂</button></div>
     
   <div class="grid-item">
-    <button type="button">TEST</button></div>
+    <audio id="sound4" src="sounds/youdontgivetwo.wav" preload="auto"></audio>
+    <button onclick="document.getElementById('sound3').play();" type="button">You don't give two F***s</button></div>
     
   <div class="grid-item">
     <button type="button">TEST</button></div>

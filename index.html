@@ -24,7 +24,7 @@ body {
   
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid #fff;
   font-size: 30px;
   text-align: center;
@@ -43,7 +43,12 @@ button {
    -webkit-tap-highlight-color:rgba(255,255,255, 1);
    -webkit-text-stroke-color: rgba(255,255,255, #EBACCB);
     word-wrap: break-word;
-} 
+}
+
+button emoji_button {
+  transform: translateX(-3cm);
+  
+}
 button:focus{
     background:white;
     color: #EBACCB;
@@ -71,11 +76,11 @@ button:focus{
     
   <div class="grid-item">
     <audio id="sound2" src="sounds/youcantstop.wav" preload="auto"></audio>
-    <button onclick="document.getElementById('sound2').play();" type="button">Lovin' myself</button></div>
+    <button onclick="document.getElementById('sound2').play();" type="emojibutton">Lovin' myself</button></div>
     
   <div class="grid-item">
     <audio id="sound3" src="sounds/choo-choo.wav" preload="auto"></audio>
-    <button style="font-size : 200px"; onclick="document.getElementById('sound3').play();" type="button">🚂</button></div>
+    <button style="font-size : 200px"; onclick="document.getElementById('sound3').play();" type="emojibutton">🚂</button></div>
     
   <div class="grid-item">
     <audio id="sound4" src="sounds/youdontgivetwo.wav" preload="auto"></audio>
